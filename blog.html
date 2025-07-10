@@ -23,6 +23,48 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        @media (max-width: 576px) {
+            .responsive-table thead {
+                display: none;
+            }
+
+            .responsive-table tbody tr {
+                display: block;
+                margin-bottom: 15px;
+                border: 1px solid #334155;
+                border-radius: 8px;
+                padding: 10px;
+                background-color: #1e293b;
+            }
+
+            .responsive-table tbody td {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 10px;
+                border: none;
+                border-bottom: 1px solid #334155;
+                font-size: 14px;
+            }
+
+            .responsive-table tbody td:last-child {
+                border-bottom: none;
+            }
+
+            .responsive-table tbody td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                color: #94a3b8;
+            }
+
+            .responsive-table tbody td:nth-child(1)::before { content: "Tanggal"; }
+            .responsive-table tbody td:nth-child(2)::before { content: "Nomor Invoice"; }
+            .responsive-table tbody td:nth-child(3)::before { content: "No. Handphone"; }
+            .responsive-table tbody td:nth-child(4)::before { content: "Harga"; }
+            .responsive-table tbody td:nth-child(5)::before { content: "Status"; }
+            }
+
+    </style>
 </head>
 
 <body>
@@ -88,58 +130,60 @@
 
     <section class="container my-5">
         <h4 class="text-center text-white fw-bold">Transaksi Real-Time</h4>
-        <p class="text-center text-muted mb-4">Berikut ini Real-Time data pesanan masuk terbaru VYGAMING STORE.</p>
+        <p class="text-center text-muted mb-4">Berikut ini Real-Time data pesanan masuk terbaru Plato Gaming.</p>
 
+        <!-- Wrapper Responsif Bootstrap -->
         <div class="table-responsive rounded-4 overflow-hidden">
-            <table class="table table-dark table-bordered table-striped align-middle mb-0">
-            <thead class="table-secondary text-dark">
+            <table class="table table-dark table-bordered table-striped align-middle mb-0 responsive-table">
+                <thead class="table-secondary text-dark">
                 <tr>
-                <th>Tanggal</th>
-                <th>Nomor Invoice</th>
-                <th>No. Handphone</th>
-                <th>Harga</th>
-                <th>Status</th>
+                    <th>Tanggal</th>
+                    <th>Nomor Invoice</th>
+                    <th>No. Handphone</th>
+                    <th>Harga</th>
+                    <th>Status</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr>
-                <td>10-07-2025 15:33:15</td>
-                <td>VGxxxxxxxxxxxx113</td>
-                <td>*********175</td>
-                <td>IDR 3.xxx</td>
-                <td><span class="badge bg-warning text-dark">PENDING</span></td>
-                </tr>
-                <tr>
-                <td>10-07-2025 15:33:51</td>
-                <td>VGxxxxxxxxxxxx049</td>
-                <td>*********269</td>
-                <td>IDR 25000xxx</td>
-                <td><span class="badge bg-success">SUCCESS</span></td>
+                    <td>10-07-2025 15:33:15</td>
+                    <td>VGxxxxxxxxxxxx113</td>
+                    <td>*********175</td>
+                    <td>IDR 3.xxx</td>
+                    <td><span class="badge bg-warning text-dark">PENDING</span></td>
                 </tr>
                 <tr>
-                <td>10-07-2025 15:33:20</td>
-                <td>VGxxxxxxxxxxxx782</td>
-                <td>*********353</td>
-                <td>IDR 27000xxx</td>
-                <td><span class="badge bg-success">SUCCESS</span></td>
+                    <td>10-07-2025 15:33:51</td>
+                    <td>VGxxxxxxxxxxxx049</td>
+                    <td>*********269</td>
+                    <td>IDR 25000xxx</td>
+                    <td><span class="badge bg-success">SUCCESS</span></td>
                 </tr>
                 <tr>
-                <td>10-07-2025 15:32:24</td>
-                <td>VGxxxxxxxxxxxx753</td>
-                <td>*********706</td>
-                <td>IDR 27000xxx</td>
-                <td><span class="badge bg-warning text-dark">PENDING</span></td>
+                    <td>10-07-2025 15:33:20</td>
+                    <td>VGxxxxxxxxxxxx782</td>
+                    <td>*********353</td>
+                    <td>IDR 27000xxx</td>
+                    <td><span class="badge bg-success">SUCCESS</span></td>
                 </tr>
                 <tr>
-                <td>10-07-2025 15:32:17</td>
-                <td>VGxxxxxxxxxxxx377</td>
-                <td>*********966</td>
-                <td>IDR 54000xxx</td>
-                <td><span class="badge bg-warning text-dark">PENDING</span></td>
+                    <td>10-07-2025 15:32:24</td>
+                    <td>VGxxxxxxxxxxxx753</td>
+                    <td>*********706</td>
+                    <td>IDR 27000xxx</td>
+                    <td><span class="badge bg-warning text-dark">PENDING</span></td>
                 </tr>
-            </tbody>
+                <tr>
+                    <td>10-07-2025 15:32:17</td>
+                    <td>VGxxxxxxxxxxxx377</td>
+                    <td>*********966</td>
+                    <td>IDR 54000xxx</td>
+                    <td><span class="badge bg-warning text-dark">PENDING</span></td>
+                </tr>
+                </tbody>
             </table>
         </div>
+
     </section>
 
     <!-- Blog Section End -->
