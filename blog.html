@@ -37,8 +37,8 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="./index.html">
-                            <img src="img/logo.png" alt="">
+                        <a href="./index.html" style="color: white;font-weight: bold;font-size: 24px;">
+                            Plato<span style="color: red;">Gaming</span>
                         </a>
                     </div>
                 </div>
@@ -46,19 +46,10 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li><a href="./index.html">Homepage</a></li>
-                                <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
-                                    <ul class="dropdown">
-                                        <li><a href="./categories.html">Categories</a></li>
-                                        <li><a href="./anime-details.html">Anime Details</a></li>
-                                        <li><a href="./anime-watching.html">Anime Watching</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-                                        <li><a href="./signup.html">Sign Up</a></li>
-                                        <li><a href="./login.html">Login</a></li>
-                                    </ul>
-                                </li>
-                                <li class="active"><a href="./blog.html">Our Blog</a></li>
-                                <li><a href="#">Contacts</a></li>
+                                <li><a href="./index.html">🛒Top Up</a></li>
+                                <li class="active"><a href="./blog.html">📜Cek Transaksi</a></li>
+                                <li><a href="./leaderboard.html">📊Leaderboard</a></li>
+                                <li><a href="./kalkulator.html">🧮Kalkulator</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -75,132 +66,82 @@
     </header>
     <!-- Header End -->
 
-    <!-- Normal Breadcrumb Begin -->
-    <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="normal__breadcrumb__text">
-                        <h2>Our Blog</h2>
-                        <p>Welcome to the official Anime blog.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Normal Breadcrumb End -->
-
     <!-- Blog Section Begin -->
-    <section class="blog spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="blog__item set-bg" data-setbg="img/blog/blog-1.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Yuri Kuma Arashi Viverra Tortor Pharetra</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-4.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Bok no Hero Academia Season 4 – 18</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-5.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Fate/Stay Night: Untimated Blade World</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="blog__item set-bg" data-setbg="img/blog/blog-7.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Housekishou Richard shi no Nazo Kantei Season 08 - 20</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-10.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Fate/Stay Night: Untimated Blade World</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-11.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Building a Better LiA Drilling Down</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section class="container text-center my-5" style="height:500px;display: flex;justify-content: center; align-items: center; flex-direction: column;">
+        <h2 class="fw-bold text-light">Cek Invoice Kamu dengan Mudah dan Cepat</h2>
+        <p class="text-light">Lihat detail pembelian kamu menggunakan nomor Invoice.</p>
+
+        <div class="bg-dark p-4 rounded-4 mx-auto mt-4" style="max-width: 600px;">
+            <form class="text-start">
+                <label for="invoiceInput" class="form-label fw-semibold text-white">
+                    Cari detail pembelian kamu disini
+                </label>
+                <div class="input-group mb-3">
+                    <input type="text" id="invoiceInput" class="form-control bg-secondary text-white" placeholder="Masukkan nomor Invoice Kamu (Contoh: VG000000000000)">
+                    <button class="btn btn-primary" type="submit">
+                    <i class="fa fa-search me-1"></i> Cari Invoice
+                    </button>
                 </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-2.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Fate/Stay Night: Untimated Blade World</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-3.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Building a Better LiA Drilling Down</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="blog__item set-bg" data-setbg="img/blog/blog-6.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Yuri Kuma Arashi Viverra Tortor Pharetra</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-8.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Bok no Hero Academia Season 4 – 18</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-9.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Fate/Stay Night: Untimated Blade World</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="blog__item set-bg" data-setbg="img/blog/blog-12.jpg">
-                                <div class="blog__item__text">
-                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
-                                    <h4><a href="#">Yuri Kuma Arashi Viverra Tortor Pharetra</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </section>
+
+    <section class="container my-5">
+        <h4 class="text-center text-white fw-bold">Transaksi Real-Time</h4>
+        <p class="text-center text-muted mb-4">Berikut ini Real-Time data pesanan masuk terbaru VYGAMING STORE.</p>
+
+        <div class="table-responsive rounded-4 overflow-hidden">
+            <table class="table table-dark table-bordered table-striped align-middle mb-0">
+            <thead class="table-secondary text-dark">
+                <tr>
+                <th>Tanggal</th>
+                <th>Nomor Invoice</th>
+                <th>No. Handphone</th>
+                <th>Harga</th>
+                <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>10-07-2025 15:33:15</td>
+                <td>VGxxxxxxxxxxxx113</td>
+                <td>*********175</td>
+                <td>IDR 3.xxx</td>
+                <td><span class="badge bg-warning text-dark">PENDING</span></td>
+                </tr>
+                <tr>
+                <td>10-07-2025 15:33:51</td>
+                <td>VGxxxxxxxxxxxx049</td>
+                <td>*********269</td>
+                <td>IDR 25000xxx</td>
+                <td><span class="badge bg-success">SUCCESS</span></td>
+                </tr>
+                <tr>
+                <td>10-07-2025 15:33:20</td>
+                <td>VGxxxxxxxxxxxx782</td>
+                <td>*********353</td>
+                <td>IDR 27000xxx</td>
+                <td><span class="badge bg-success">SUCCESS</span></td>
+                </tr>
+                <tr>
+                <td>10-07-2025 15:32:24</td>
+                <td>VGxxxxxxxxxxxx753</td>
+                <td>*********706</td>
+                <td>IDR 27000xxx</td>
+                <td><span class="badge bg-warning text-dark">PENDING</span></td>
+                </tr>
+                <tr>
+                <td>10-07-2025 15:32:17</td>
+                <td>VGxxxxxxxxxxxx377</td>
+                <td>*********966</td>
+                <td>IDR 54000xxx</td>
+                <td><span class="badge bg-warning text-dark">PENDING</span></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+
     <!-- Blog Section End -->
 
     <!-- Footer Section Begin -->
@@ -212,29 +153,31 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="footer__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html" style="color: white;font-weight: bold;font-size: 24px;">
+                                Plato<span style="color: red;">Gaming</span>
+                            </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="footer__nav">
                         <ul>
-                            <li class="active"><a href="./index.html">Homepage</a></li>
-                            <li><a href="./categories.html">Categories</a></li>
-                            <li><a href="./blog.html">Our Blog</a></li>
-                            <li><a href="#">Contacts</a></li>
+                            <li class="active"><a href="./index.html">Top Up</a></li>
+                            <li><a href="./categories.html">Cek Transaksi</a></li>
+                            <li><a href="#">Leaderboard</a></li>
+                            <li><a href="#">Kalkulator</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 
-                  </div>
-              </div>
-          </div>
-      </footer>
-      <!-- Footer Section End -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
 
       <!-- Search model Begin -->
       <div class="search-model">
